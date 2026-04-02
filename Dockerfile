@@ -3,5 +3,5 @@ RUN apt-get update && apt-get install -y libgstreamer1.0-dev libgstreamer-plugin
 WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir flet
-CMD ["flet", "run", "--web", "--port", "8080", "main.py"]
+CMD ["flet", "run", "--web", "--port", "10000", "main.py"]
 
